@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EigeneControlsBeispiel", "EigeneControlsBeispiel\EigeneControlsBeispiel.csproj", "{D0816C5A-AF0D-4D77-BE8D-92D55DF78C1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verkehr", "Verkehr\Verkehr.csproj", "{6ADC4FF0-69EA-47DD-A9E0-98E7B6B0BD6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0816C5A-AF0D-4D77-BE8D-92D55DF78C1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0816C5A-AF0D-4D77-BE8D-92D55DF78C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0816C5A-AF0D-4D77-BE8D-92D55DF78C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0816C5A-AF0D-4D77-BE8D-92D55DF78C1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ADC4FF0-69EA-47DD-A9E0-98E7B6B0BD6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ADC4FF0-69EA-47DD-A9E0-98E7B6B0BD6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ADC4FF0-69EA-47DD-A9E0-98E7B6B0BD6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ADC4FF0-69EA-47DD-A9E0-98E7B6B0BD6E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BED80BB5-2A55-409A-945E-D25B20EF8519}
+	EndGlobalSection
+EndGlobal

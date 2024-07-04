@@ -1,0 +1,97 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Animationen"
+        xmlns:b="http://schemas.microsoft.com/xaml/behaviors" x:Class="Animationen.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+  <Window.Resources>
+    <Storyboard x:Key="Storyboard1">
+      <DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBox" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+        <EasingDoubleKeyFrame KeyTime="00:00:03" Value="271.336"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBox" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+        <EasingDoubleKeyFrame KeyTime="00:00:03" Value="241.106"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames Storyboard.TargetName="textBox" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+        <EasingDoubleKeyFrame KeyTime="00:00:03" Value="1476.042"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames Storyboard.TargetName="button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+        <EasingDoubleKeyFrame KeyTime="00:00:00" Value="273.902"/>
+        <EasingDoubleKeyFrame KeyTime="00:00:07" Value="64.268"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames Storyboard.TargetName="button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+        <EasingDoubleKeyFrame KeyTime="00:00:00" Value="93.258">
+          <EasingDoubleKeyFrame.EasingFunction>
+            <BackEase EasingMode="EaseIn"/>
+          </EasingDoubleKeyFrame.EasingFunction>
+        </EasingDoubleKeyFrame>
+        <EasingDoubleKeyFrame KeyTime="00:00:07" Value="407.16">
+          <EasingDoubleKeyFrame.EasingFunction>
+            <ElasticEase EasingMode="EaseInOut"/>
+          </EasingDoubleKeyFrame.EasingFunction>
+        </EasingDoubleKeyFrame>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames Storyboard.TargetName="button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+        <EasingDoubleKeyFrame KeyTime="00:00:00" Value="-529.881"/>
+        <EasingDoubleKeyFrame KeyTime="00:00:07" Value="-1023.839"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames Storyboard.TargetName="button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+        <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1.16"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames Storyboard.TargetName="button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+        <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1.942"/>
+      </DoubleAnimationUsingKeyFrames>
+      <ColorAnimationUsingKeyFrames Storyboard.TargetName="grid" Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+        <EasingColorKeyFrame KeyTime="00:00:00" Value="#FFDECF2A"/>
+        <EasingColorKeyFrame KeyTime="00:00:03" Value="#FF40DE2A"/>
+        <EasingColorKeyFrame KeyTime="00:00:06" Value="#FFDECF2A"/>
+      </ColorAnimationUsingKeyFrames>
+      <ColorAnimationUsingKeyFrames Storyboard.TargetName="grid" Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+        <EasingColorKeyFrame KeyTime="00:00:00" Value="#FF6B2C14"/>
+        <EasingColorKeyFrame KeyTime="00:00:03" Value="sc#1, 0.0116122449, 0.02842604, 0.07818743"/>
+        <EasingColorKeyFrame KeyTime="00:00:06" Value="#FF182322"/>
+      </ColorAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames Storyboard.TargetName="grid" Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Offset)">
+        <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+        <EasingDoubleKeyFrame KeyTime="00:00:06" Value="0.993"/>
+      </DoubleAnimationUsingKeyFrames>
+    </Storyboard>
+  </Window.Resources>
+  <Grid x:Name="grid">
+    <Grid.Background>
+      <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF0844D6"/>
+        <GradientStop Color="#FF63190D" Offset="1"/>
+      </LinearGradientBrush>
+    </Grid.Background>
+    <TextBox x:Name="textBox"  TextWrapping="Wrap" Text="TextBox" Width="120" Height="30" RenderTransformOrigin="0.5,0.5" Margin="80,85,600,319" d:LayoutOverrides="Width, Height">
+      <TextBox.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform/>
+        </TransformGroup>
+      </TextBox.RenderTransform>
+    </TextBox>
+    <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Height="29" Margin="43,21,0,0" VerticalAlignment="Top" Width="137" RenderTransformOrigin="0.5,0.5">
+      <Button.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform/>
+        </TransformGroup>
+      </Button.RenderTransform>
+      <b:Interaction.Triggers>
+        <b:EventTrigger EventName="Click">
+          <b:ControlStoryboardAction Storyboard="{StaticResource Storyboard1}" ControlStoryboardOption="Play"/>
+        </b:EventTrigger>
+      </b:Interaction.Triggers>
+    </Button>
+
+  </Grid>
+</Window>

@@ -1,0 +1,18 @@
+﻿<Window x:Class="ThemesBeispiel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThemesBeispiel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+    <Button Content="Button" HorizontalAlignment="Left" Margin="121,94,0,0" VerticalAlignment="Top"/>
+    <Label Content="Label" HorizontalAlignment="Left" Margin="235,94,0,0" VerticalAlignment="Top"/>
+    <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="111,184,0,0" VerticalAlignment="Top"/>
+    <TextBox HorizontalAlignment="Left" Margin="328,199,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+    <CheckBox Content="CheckBox" HorizontalAlignment="Center" Margin="0,104,0,0" VerticalAlignment="Top"/>
+    <Slider HorizontalAlignment="Left" Margin="153,267,0,0" VerticalAlignment="Top" Width="120"/>
+
+  </Grid>
+</Window>
