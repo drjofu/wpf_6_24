@@ -45,6 +45,8 @@ namespace Verkehr
   ///     <MyNamespace:Ampel/>
   ///
   /// </summary>
+  [TemplatePart(Name = "PART_LampeRot", Type = typeof(Shape))]
+  [TemplatePart(Name = "PART_LampeGrün", Type = typeof(Shape))]
   public class Ampel : Control
   {
     static Ampel()
