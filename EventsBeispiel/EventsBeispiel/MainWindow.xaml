@@ -1,0 +1,29 @@
+﻿<Window x:Class="EventsBeispiel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EventsBeispiel"
+        mc:Ignorable="d"
+        PreviewMouseDown="PreviewMouseDownHandler"
+        MouseDown="MouseDownHandler"
+        Title="MainWindow" Height="450" Width="800">
+  <StackPanel         PreviewMouseDown="PreviewMouseDownHandler"
+        MouseDown="MouseDownHandler"
+>
+    <Button Click="ButtonClick" Margin="5"         PreviewMouseDown="PreviewMouseDownHandler"
+        MouseDown="MouseDownHandler"
+>
+      <StackPanel Orientation="Horizontal"         PreviewMouseDown="PreviewMouseDownHandler"
+        MouseDown="MouseDownHandler"
+>
+        <Ellipse Width="50" Height="50" Fill="Red"         PreviewMouseDown="PreviewMouseDownHandler"
+        MouseDown="MouseDownHandler"
+/>
+        <TextBlock Text="Bitte drücken"         PreviewMouseDown="PreviewMouseDownHandler"
+        MouseDown="MouseDownHandler"
+/>
+      </StackPanel>
+    </Button>
+  </StackPanel>
+</Window>
