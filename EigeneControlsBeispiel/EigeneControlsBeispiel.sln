@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EigeneControlsBeispiel", "EigeneControlsBeispiel\EigeneControlsBeispiel.csproj", "{D0816C5A-AF0D-4D77-BE8D-92D55DF78C1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EigeneControlsBeispiel", "EigeneControlsBeispiel\EigeneControlsBeispiel.csproj", "{D0816C5A-AF0D-4D77-BE8D-92D55DF78C1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verkehr", "Verkehr\Verkehr.csproj", "{6ADC4FF0-69EA-47DD-A9E0-98E7B6B0BD6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Verkehr", "Verkehr\Verkehr.csproj", "{6ADC4FF0-69EA-47DD-A9E0-98E7B6B0BD6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
